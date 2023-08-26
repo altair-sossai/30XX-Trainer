@@ -66,7 +66,7 @@ namespace _30XX_Trainer
             Parameters.TitanShards = (int)NumTitanShards.Value;
         }
 
-        private void BtnTitanShards_Click(object sender, EventArgs e)
+        private void BtnMaxTitanShards_Click(object sender, EventArgs e)
         {
             NumTitanShards.Value = 999_999;
         }
@@ -76,9 +76,19 @@ namespace _30XX_Trainer
             Parameters.Nuts = (int)NumNuts.Value;
         }
 
-        private void BtnNuts_Click(object sender, EventArgs e)
+        private void BtnMaxNuts_Click(object sender, EventArgs e)
         {
             NumNuts.Value = 999_999;
+        }
+
+        private void NumCubes_ValueChanged(object sender, EventArgs e)
+        {
+            Parameters.Cubes = (int)NumCubes.Value;
+        }
+
+        private void BtnMaxCubes_Click(object sender, EventArgs e)
+        {
+            NumCubes.Value = 999_999;
         }
 
         private void ReloadParameters()
@@ -86,6 +96,7 @@ namespace _30XX_Trainer
             NumMemoria.Value = Parameters.Memoria;
             NumTitanShards.Value = Parameters.TitanShards;
             NumNuts.Value = Parameters.Nuts;
+            NumCubes.Value = Parameters.Cubes;
         }
     }
 }
