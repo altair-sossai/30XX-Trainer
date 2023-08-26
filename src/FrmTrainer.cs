@@ -23,7 +23,7 @@ namespace _30XX_Trainer
             var success = _game.AttachGameProcess();
             if (!success)
             {
-                MessageBox.Show("Failed to attach to game process");
+                MessageBox.Show(@"Failed to attach to game process", @"Fail", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
