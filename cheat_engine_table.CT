@@ -13,6 +13,20 @@
       <VariableType>4 Bytes</VariableType>
       <Address>30XX.exe+C3D09C</Address>
     </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"Nuts - Magic number"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>30XX.exe+4C76F6C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Nuts"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>30XX.exe+4C77DDC</Address>
+    </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
 </CheatTable>

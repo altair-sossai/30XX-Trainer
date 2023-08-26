@@ -29,10 +29,10 @@ namespace _30XX_Trainer
 
             BtnAttach.Enabled = false;
             BtnDettach.Enabled = true;
+            BtnReloadParameters.Enabled = true;
             GrpParameters.Enabled = true;
 
-            NumMemoria.Value = Parameters.Memoria;
-            NumTitanShards.Value = Parameters.TitanShards;
+            ReloadParameters();
         }
 
         private void BtnDettach_Click(object sender, EventArgs e)
@@ -42,7 +42,13 @@ namespace _30XX_Trainer
 
             BtnAttach.Enabled = true;
             BtnDettach.Enabled = false;
+            BtnReloadParameters.Enabled = false;
             GrpParameters.Enabled = false;
+        }
+
+        private void BtnReloadParameters_Click(object sender, EventArgs e)
+        {
+            ReloadParameters();
         }
 
         private void NumMemoria_ValueChanged(object sender, EventArgs e)
@@ -63,6 +69,23 @@ namespace _30XX_Trainer
         private void BtnTitanShards_Click(object sender, EventArgs e)
         {
             NumTitanShards.Value = 999_999;
+        }
+
+        private void NumNuts_ValueChanged(object sender, EventArgs e)
+        {
+            Parameters.Nuts = (int)NumNuts.Value;
+        }
+
+        private void BtnNuts_Click(object sender, EventArgs e)
+        {
+            NumNuts.Value = 999_999;
+        }
+
+        private void ReloadParameters()
+        {
+            NumMemoria.Value = Parameters.Memoria;
+            NumTitanShards.Value = Parameters.TitanShards;
+            NumNuts.Value = Parameters.Nuts;
         }
     }
 }

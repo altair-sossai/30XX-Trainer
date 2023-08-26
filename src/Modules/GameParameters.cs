@@ -20,5 +20,11 @@
             get => _game.ReadInt("titan_shards");
             set => _game.SetInt("titan_shards", value);
         }
+
+        public int Nuts
+        {
+            get => _game.ReadInt("nuts") - _game.ReadInt("nuts_magic_number");
+            set => _game.SetInt("nuts", value + _game.ReadInt("nuts_magic_number"));
+        }
     }
 }
