@@ -91,12 +91,23 @@ namespace _30XX_Trainer
             NumCubes.Value = 999_999;
         }
 
+        private void NumCores_ValueChanged(object sender, EventArgs e)
+        {
+            Parameters.Cores = (int)NumCores.Value;
+        }
+
+        private void BtnMaxCores_Click(object sender, EventArgs e)
+        {
+            NumCores.Value = 9999;
+        }
+
         private void ReloadParameters()
         {
             NumMemoria.Value = Parameters.Memoria;
             NumTitanShards.Value = Parameters.TitanShards;
             NumNuts.Value = Parameters.Nuts;
             NumCubes.Value = Parameters.Cubes;
+            NumCores.Value = Parameters.Cores;
         }
     }
 }

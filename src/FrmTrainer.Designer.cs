@@ -31,6 +31,9 @@
             this.BtnAttach = new System.Windows.Forms.Button();
             this.BtnDettach = new System.Windows.Forms.Button();
             this.GrpParameters = new System.Windows.Forms.GroupBox();
+            this.BtnMaxCubes = new System.Windows.Forms.Button();
+            this.NumCubes = new System.Windows.Forms.NumericUpDown();
+            this.LblCubes = new System.Windows.Forms.Label();
             this.BtnMaxNuts = new System.Windows.Forms.Button();
             this.NumNuts = new System.Windows.Forms.NumericUpDown();
             this.LblNuts = new System.Windows.Forms.Label();
@@ -41,14 +44,15 @@
             this.NumMemoria = new System.Windows.Forms.NumericUpDown();
             this.LblMemoria = new System.Windows.Forms.Label();
             this.BtnReloadParameters = new System.Windows.Forms.Button();
-            this.BtnMaxCubes = new System.Windows.Forms.Button();
-            this.NumCubes = new System.Windows.Forms.NumericUpDown();
-            this.LblCubes = new System.Windows.Forms.Label();
+            this.BtnMaxCores = new System.Windows.Forms.Button();
+            this.NumCores = new System.Windows.Forms.NumericUpDown();
+            this.LblCores = new System.Windows.Forms.Label();
             this.GrpParameters.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumCubes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumNuts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumTitanShards)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumMemoria)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumCubes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumCores)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnAttach
@@ -77,6 +81,9 @@
             this.GrpParameters.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.GrpParameters.Controls.Add(this.BtnMaxCores);
+            this.GrpParameters.Controls.Add(this.NumCores);
+            this.GrpParameters.Controls.Add(this.LblCores);
             this.GrpParameters.Controls.Add(this.BtnMaxCubes);
             this.GrpParameters.Controls.Add(this.NumCubes);
             this.GrpParameters.Controls.Add(this.LblCubes);
@@ -97,6 +104,38 @@
             this.GrpParameters.TabIndex = 2;
             this.GrpParameters.TabStop = false;
             this.GrpParameters.Text = "Parameters";
+            // 
+            // BtnMaxCubes
+            // 
+            this.BtnMaxCubes.Location = new System.Drawing.Point(208, 95);
+            this.BtnMaxCubes.Name = "BtnMaxCubes";
+            this.BtnMaxCubes.Size = new System.Drawing.Size(40, 23);
+            this.BtnMaxCubes.TabIndex = 11;
+            this.BtnMaxCubes.Text = "Max";
+            this.BtnMaxCubes.UseVisualStyleBackColor = true;
+            this.BtnMaxCubes.Click += new System.EventHandler(this.BtnMaxCubes_Click);
+            // 
+            // NumCubes
+            // 
+            this.NumCubes.Location = new System.Drawing.Point(82, 97);
+            this.NumCubes.Maximum = new decimal(new int[] {
+            2147483647,
+            0,
+            0,
+            0});
+            this.NumCubes.Name = "NumCubes";
+            this.NumCubes.Size = new System.Drawing.Size(120, 20);
+            this.NumCubes.TabIndex = 10;
+            this.NumCubes.ValueChanged += new System.EventHandler(this.NumCubes_ValueChanged);
+            // 
+            // LblCubes
+            // 
+            this.LblCubes.AutoSize = true;
+            this.LblCubes.Location = new System.Drawing.Point(6, 99);
+            this.LblCubes.Name = "LblCubes";
+            this.LblCubes.Size = new System.Drawing.Size(40, 13);
+            this.LblCubes.TabIndex = 9;
+            this.LblCubes.Text = "Cubes:";
             // 
             // BtnMaxNuts
             // 
@@ -205,37 +244,37 @@
             this.BtnReloadParameters.UseVisualStyleBackColor = true;
             this.BtnReloadParameters.Click += new System.EventHandler(this.BtnReloadParameters_Click);
             // 
-            // BtnMaxCubes
+            // BtnMaxCores
             // 
-            this.BtnMaxCubes.Location = new System.Drawing.Point(208, 95);
-            this.BtnMaxCubes.Name = "BtnMaxCubes";
-            this.BtnMaxCubes.Size = new System.Drawing.Size(40, 23);
-            this.BtnMaxCubes.TabIndex = 11;
-            this.BtnMaxCubes.Text = "Max";
-            this.BtnMaxCubes.UseVisualStyleBackColor = true;
-            this.BtnMaxCubes.Click += new System.EventHandler(this.BtnMaxCubes_Click);
+            this.BtnMaxCores.Location = new System.Drawing.Point(208, 121);
+            this.BtnMaxCores.Name = "BtnMaxCores";
+            this.BtnMaxCores.Size = new System.Drawing.Size(40, 23);
+            this.BtnMaxCores.TabIndex = 14;
+            this.BtnMaxCores.Text = "Max";
+            this.BtnMaxCores.UseVisualStyleBackColor = true;
+            this.BtnMaxCores.Click += new System.EventHandler(this.BtnMaxCores_Click);
             // 
-            // NumCubes
+            // NumCores
             // 
-            this.NumCubes.Location = new System.Drawing.Point(82, 97);
-            this.NumCubes.Maximum = new decimal(new int[] {
+            this.NumCores.Location = new System.Drawing.Point(82, 123);
+            this.NumCores.Maximum = new decimal(new int[] {
             2147483647,
             0,
             0,
             0});
-            this.NumCubes.Name = "NumCubes";
-            this.NumCubes.Size = new System.Drawing.Size(120, 20);
-            this.NumCubes.TabIndex = 10;
-            this.NumCubes.ValueChanged += new System.EventHandler(this.NumCubes_ValueChanged);
+            this.NumCores.Name = "NumCores";
+            this.NumCores.Size = new System.Drawing.Size(120, 20);
+            this.NumCores.TabIndex = 13;
+            this.NumCores.ValueChanged += new System.EventHandler(this.NumCores_ValueChanged);
             // 
-            // LblCubes
+            // LblCores
             // 
-            this.LblCubes.AutoSize = true;
-            this.LblCubes.Location = new System.Drawing.Point(6, 99);
-            this.LblCubes.Name = "LblCubes";
-            this.LblCubes.Size = new System.Drawing.Size(40, 13);
-            this.LblCubes.TabIndex = 9;
-            this.LblCubes.Text = "Cubes:";
+            this.LblCores.AutoSize = true;
+            this.LblCores.Location = new System.Drawing.Point(6, 125);
+            this.LblCores.Name = "LblCores";
+            this.LblCores.Size = new System.Drawing.Size(37, 13);
+            this.LblCores.TabIndex = 12;
+            this.LblCores.Text = "Cores:";
             // 
             // FrmTrainer
             // 
@@ -252,10 +291,11 @@
             this.Text = "30XX Trainer - v1.00.15";
             this.GrpParameters.ResumeLayout(false);
             this.GrpParameters.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumCubes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumNuts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumTitanShards)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumMemoria)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumCubes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumCores)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -278,6 +318,9 @@
         private System.Windows.Forms.Button BtnMaxCubes;
         private System.Windows.Forms.NumericUpDown NumCubes;
         private System.Windows.Forms.Label LblCubes;
+        private System.Windows.Forms.Button BtnMaxCores;
+        private System.Windows.Forms.NumericUpDown NumCores;
+        private System.Windows.Forms.Label LblCores;
     }
 }
 

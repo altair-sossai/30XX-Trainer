@@ -32,5 +32,11 @@
             get => _game.ReadInt("cubes");
             set => _game.SetInt("cubes", value);
         }
+
+        public int Cores
+        {
+            get => _game.ReadInt("cores");
+            set => _game.SetInt("cores", value);
+        }
     }
 }

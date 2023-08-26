@@ -27,6 +27,16 @@
       <VariableType>4 Bytes</VariableType>
       <Address>30XX.exe+4C77DDC</Address>
     </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"Cores"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"30XX.exe"+00C3D2B8</Address>
+      <Offsets>
+        <Offset>87C</Offset>
+      </Offsets>
+    </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
 </CheatTable>
