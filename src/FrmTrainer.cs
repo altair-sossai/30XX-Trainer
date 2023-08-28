@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Reflection;
 using System.Windows.Forms;
 using _30XX_Trainer.Modules;
 
@@ -7,6 +9,9 @@ namespace _30XX_Trainer
     public partial class FrmTrainer : Form
     {
         private static readonly string File = $@"{Application.StartupPath}\codes.ini";
+        private static readonly Assembly Assembly = Assembly.GetExecutingAssembly();
+        private static readonly FileVersionInfo FileVersionInfo = FileVersionInfo.GetVersionInfo(Assembly.Location);
+        private readonly Timer _timer = new Timer();
         private Game _game;
 
         public FrmTrainer()
@@ -14,7 +19,12 @@ namespace _30XX_Trainer
             InitializeComponent();
         }
 
-        private GameParameters Parameters => _game.Parameters;
+        private void FrmTrainer_Load(object sender, EventArgs e)
+        {
+            _timer.Tick += Timer_Tick;
+
+            Text = $@"30XX Trainer - v{FileVersionInfo.FileVersion}";
+        }
 
         private void BtnAttach_Click(object sender, EventArgs e)
         {
@@ -27,87 +37,36 @@ namespace _30XX_Trainer
                 return;
             }
 
+            _timer.Enabled = true;
+
             BtnAttach.Enabled = false;
             BtnDettach.Enabled = true;
-            BtnReloadParameters.Enabled = true;
             GrpParameters.Enabled = true;
-
-            ReloadParameters();
         }
 
         private void BtnDettach_Click(object sender, EventArgs e)
         {
+            _timer.Enabled = false;
+
             _game.DettachGameProcess();
             _game = null;
 
             BtnAttach.Enabled = true;
             BtnDettach.Enabled = false;
-            BtnReloadParameters.Enabled = false;
             GrpParameters.Enabled = false;
         }
 
-        private void BtnReloadParameters_Click(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
-            ReloadParameters();
-        }
+            var parameters = _game?.Parameters;
+            if (parameters == null)
+                return;
 
-        private void NumMemoria_ValueChanged(object sender, EventArgs e)
-        {
-            Parameters.Memoria = (int)NumMemoria.Value;
-        }
-
-        private void BtnMaxMemoria_Click(object sender, EventArgs e)
-        {
-            NumMemoria.Value = 999_999;
-        }
-
-        private void NumTitanShards_ValueChanged(object sender, EventArgs e)
-        {
-            Parameters.TitanShards = (int)NumTitanShards.Value;
-        }
-
-        private void BtnMaxTitanShards_Click(object sender, EventArgs e)
-        {
-            NumTitanShards.Value = 999_999;
-        }
-
-        private void NumNuts_ValueChanged(object sender, EventArgs e)
-        {
-            Parameters.Nuts = (int)NumNuts.Value;
-        }
-
-        private void BtnMaxNuts_Click(object sender, EventArgs e)
-        {
-            NumNuts.Value = 999_999;
-        }
-
-        private void NumCubes_ValueChanged(object sender, EventArgs e)
-        {
-            Parameters.Cubes = (int)NumCubes.Value;
-        }
-
-        private void BtnMaxCubes_Click(object sender, EventArgs e)
-        {
-            NumCubes.Value = 999_999;
-        }
-
-        private void NumCores_ValueChanged(object sender, EventArgs e)
-        {
-            Parameters.Cores = (int)NumCores.Value;
-        }
-
-        private void BtnMaxCores_Click(object sender, EventArgs e)
-        {
-            NumCores.Value = 9999;
-        }
-
-        private void ReloadParameters()
-        {
-            NumMemoria.Value = Parameters.Memoria;
-            NumTitanShards.Value = Parameters.TitanShards;
-            NumNuts.Value = Parameters.Nuts;
-            NumCubes.Value = Parameters.Cubes;
-            NumCores.Value = Parameters.Cores;
+            parameters.Memoria = 999_999;
+            parameters.TitanShards = 999_999;
+            parameters.Nuts = 999_999;
+            parameters.Cubes = 999_999;
+            parameters.Cores = 999_999;
         }
     }
 }

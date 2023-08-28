@@ -1,10 +1,10 @@
 ﻿namespace _30XX_Trainer.Modules
 {
-    public class GameParameters
+    public class Parameters
     {
         private readonly Game _game;
 
-        public GameParameters(Game game)
+        public Parameters(Game game)
         {
             _game = game;
         }

@@ -13,7 +13,7 @@ namespace _30XX_Trainer.Modules
             _file = file;
         }
 
-        public GameParameters Parameters { get; private set; }
+        public Parameters Parameters { get; private set; }
 
         public bool AttachGameProcess()
         {
@@ -22,7 +22,7 @@ namespace _30XX_Trainer.Modules
             if (!_mem.OpenProcess("30XX"))
                 return false;
 
-            Parameters = new GameParameters(this);
+            Parameters = new Parameters(this);
 
             return true;
         }
