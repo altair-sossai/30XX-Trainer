@@ -37,6 +37,16 @@
         <Offset>87C</Offset>
       </Offsets>
     </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"Max HP"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"30XX.exe"+00C3D2B8</Address>
+      <Offsets>
+        <Offset>1A8</Offset>
+      </Offsets>
+    </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
 </CheatTable>

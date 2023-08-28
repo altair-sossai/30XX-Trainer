@@ -62,11 +62,23 @@ namespace _30XX_Trainer
             if (parameters == null)
                 return;
 
-            parameters.Memoria = 999_999;
-            parameters.TitanShards = 999_999;
-            parameters.Nuts = 999_999;
-            parameters.Cubes = 999_999;
-            parameters.Cores = 999_999;
+            if (CbMemoria.Checked)
+                parameters.Memoria = 999_999;
+
+            if (CbTitanShards.Checked)
+                parameters.TitanShards = 999_999;
+
+            if (CbNuts.Checked)
+                parameters.Nuts = 999_999;
+
+            if (CbCubes.Checked)
+                parameters.Cubes = 999_999;
+
+            if (CbCores.Checked)
+                parameters.Cores = 999_999;
+
+            if (CbMaxHp.Checked)
+                parameters.MaxHp = 999_999;
         }
     }
 }

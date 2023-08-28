@@ -36,6 +36,7 @@
             this.CbNuts = new System.Windows.Forms.CheckBox();
             this.CbTitanShards = new System.Windows.Forms.CheckBox();
             this.CbMemoria = new System.Windows.Forms.CheckBox();
+            this.CbMaxHp = new System.Windows.Forms.CheckBox();
             this.GrpParameters.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +66,7 @@
             this.GrpParameters.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.GrpParameters.Controls.Add(this.CbMaxHp);
             this.GrpParameters.Controls.Add(this.CbCores);
             this.GrpParameters.Controls.Add(this.CbCubes);
             this.GrpParameters.Controls.Add(this.CbNuts);
@@ -129,6 +131,16 @@
             this.CbMemoria.Text = "Max Memoria";
             this.CbMemoria.UseVisualStyleBackColor = true;
             // 
+            // CbMaxHp
+            // 
+            this.CbMaxHp.AutoSize = true;
+            this.CbMaxHp.Location = new System.Drawing.Point(9, 134);
+            this.CbMaxHp.Name = "CbMaxHp";
+            this.CbMaxHp.Size = new System.Drawing.Size(64, 17);
+            this.CbMaxHp.TabIndex = 20;
+            this.CbMaxHp.Text = "Max HP";
+            this.CbMaxHp.UseVisualStyleBackColor = true;
+            // 
             // FrmTrainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +170,7 @@
         private System.Windows.Forms.CheckBox CbNuts;
         private System.Windows.Forms.CheckBox CbTitanShards;
         private System.Windows.Forms.CheckBox CbMemoria;
+        private System.Windows.Forms.CheckBox CbMaxHp;
     }
 }
 
