@@ -2,7 +2,7 @@
 
 # 30XX Game Trainer
 
-![30XX Logo](assets\logo.jpg)
+![30XX Logo](assets/logo.jpg)
 
 ## Table of Contents
 
@@ -40,6 +40,8 @@ Our trainer project currently includes the following features:
 - **Enhanced Weapons:** Boost weapon damage and effectiveness.
 
 These features are just the beginning, and we plan to expand the trainer's capabilities over time.
+
+![30XX Logo](assets/trainer-screenshot.png)
 
 ## Getting Started
 
@@ -82,4 +84,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions, suggestions, or just want to say hello, you can reach us at [your@email.com](mailto:your@email.com) or through the [GitHub issues](link_to_issues_page).
+If you have any questions, suggestions, or just want to say hello, you can reach us at [altairsossai@gmail.com](mailto:altairsossai@gmail.com) or through the [GitHub issues](link_to_issues_page).
