@@ -39,6 +39,12 @@
             set => _game.SetInt("cores", value);
         }
 
+        public int Hp
+        {
+            get => _game.ReadInt("hp");
+            set => _game.SetInt("hp", value);
+        }
+
         public int MaxHp
         {
             get => _game.ReadInt("max_hp");
