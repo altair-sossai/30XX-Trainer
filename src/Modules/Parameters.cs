@@ -50,5 +50,17 @@
             get => _game.ReadInt("max_hp");
             set => _game.SetInt("max_hp", value);
         }
+
+        public int En
+        {
+            get => _game.ReadInt("en");
+            set => _game.SetInt("en", value);
+        }
+
+        public int MaxEn
+        {
+            get => _game.ReadInt("max_en");
+            set => _game.SetInt("max_en", value);
+        }
     }
 }

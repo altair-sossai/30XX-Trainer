@@ -78,10 +78,10 @@ namespace _30XX_Trainer
                 parameters.Cores = 999_999;
 
             if (CbMaxHp.Checked)
-            {
-                parameters.Hp = 999_999;
-                parameters.MaxHp = 999_999;
-            }
+                parameters.Hp = parameters.MaxHp = 999_999;
+
+            if (CbMaxEn.Checked)
+                parameters.En = parameters.MaxEn = 999_999;
         }
     }
 }

@@ -31,12 +31,13 @@
             this.BtnAttach = new System.Windows.Forms.Button();
             this.BtnDettach = new System.Windows.Forms.Button();
             this.GrpParameters = new System.Windows.Forms.GroupBox();
+            this.CbMaxHp = new System.Windows.Forms.CheckBox();
             this.CbCores = new System.Windows.Forms.CheckBox();
             this.CbCubes = new System.Windows.Forms.CheckBox();
             this.CbNuts = new System.Windows.Forms.CheckBox();
             this.CbTitanShards = new System.Windows.Forms.CheckBox();
             this.CbMemoria = new System.Windows.Forms.CheckBox();
-            this.CbMaxHp = new System.Windows.Forms.CheckBox();
+            this.CbMaxEn = new System.Windows.Forms.CheckBox();
             this.GrpParameters.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +67,7 @@
             this.GrpParameters.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.GrpParameters.Controls.Add(this.CbMaxEn);
             this.GrpParameters.Controls.Add(this.CbMaxHp);
             this.GrpParameters.Controls.Add(this.CbCores);
             this.GrpParameters.Controls.Add(this.CbCubes);
@@ -80,6 +82,16 @@
             this.GrpParameters.TabIndex = 2;
             this.GrpParameters.TabStop = false;
             this.GrpParameters.Text = "Parameters";
+            // 
+            // CbMaxHp
+            // 
+            this.CbMaxHp.AutoSize = true;
+            this.CbMaxHp.Location = new System.Drawing.Point(9, 134);
+            this.CbMaxHp.Name = "CbMaxHp";
+            this.CbMaxHp.Size = new System.Drawing.Size(64, 17);
+            this.CbMaxHp.TabIndex = 20;
+            this.CbMaxHp.Text = "Max HP";
+            this.CbMaxHp.UseVisualStyleBackColor = true;
             // 
             // CbCores
             // 
@@ -131,15 +143,15 @@
             this.CbMemoria.Text = "Max Memoria";
             this.CbMemoria.UseVisualStyleBackColor = true;
             // 
-            // CbMaxHp
+            // CbMaxEn
             // 
-            this.CbMaxHp.AutoSize = true;
-            this.CbMaxHp.Location = new System.Drawing.Point(9, 134);
-            this.CbMaxHp.Name = "CbMaxHp";
-            this.CbMaxHp.Size = new System.Drawing.Size(64, 17);
-            this.CbMaxHp.TabIndex = 20;
-            this.CbMaxHp.Text = "Max HP";
-            this.CbMaxHp.UseVisualStyleBackColor = true;
+            this.CbMaxEn.AutoSize = true;
+            this.CbMaxEn.Location = new System.Drawing.Point(9, 157);
+            this.CbMaxEn.Name = "CbMaxEn";
+            this.CbMaxEn.Size = new System.Drawing.Size(64, 17);
+            this.CbMaxEn.TabIndex = 21;
+            this.CbMaxEn.Text = "Max EN";
+            this.CbMaxEn.UseVisualStyleBackColor = true;
             // 
             // FrmTrainer
             // 
@@ -171,6 +183,7 @@
         private System.Windows.Forms.CheckBox CbTitanShards;
         private System.Windows.Forms.CheckBox CbMemoria;
         private System.Windows.Forms.CheckBox CbMaxHp;
+        private System.Windows.Forms.CheckBox CbMaxEn;
     }
 }
 

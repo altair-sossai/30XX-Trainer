@@ -57,6 +57,26 @@
         <Offset>1A8</Offset>
       </Offsets>
     </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"EN"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"30XX.exe"+00C3D2B8</Address>
+      <Offsets>
+        <Offset>1E0</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"Max EN"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"30XX.exe"+00C3D2B8</Address>
+      <Offsets>
+        <Offset>1E8</Offset>
+      </Offsets>
+    </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
 </CheatTable>
