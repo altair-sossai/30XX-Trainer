@@ -82,6 +82,18 @@ namespace _30XX_Trainer
 
             if (CbMaxEn.Checked)
                 parameters.En = parameters.MaxEn = 999_999;
+
+            if (CbAttackPoints.Checked)
+                parameters.AttackPoints = 999;
+
+            if (CbPowerPoints.Checked)
+                parameters.PowerPoints = 999;
+
+            if (CbSpeedPoints.Checked)
+                parameters.SpeedPoints = 250;
+
+            if (CbJumpPoints.Checked)
+                parameters.JumpPoints = 500;
         }
     }
 }

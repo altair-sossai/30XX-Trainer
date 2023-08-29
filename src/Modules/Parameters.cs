@@ -62,5 +62,29 @@
             get => _game.ReadInt("max_en");
             set => _game.SetInt("max_en", value);
         }
+
+        public int AttackPoints
+        {
+            get => _game.ReadInt("attack_points");
+            set => _game.SetInt("attack_points", value);
+        }
+
+        public int PowerPoints
+        {
+            get => _game.ReadInt("power_points");
+            set => _game.SetInt("power_points", value);
+        }
+
+        public int SpeedPoints
+        {
+            get => _game.ReadInt("speed_points");
+            set => _game.SetInt("speed_points", value);
+        }
+
+        public int JumpPoints
+        {
+            get => _game.ReadInt("jump_points");
+            set => _game.SetInt("jump_points", value);
+        }
     }
 }

@@ -31,13 +31,17 @@
             this.BtnAttach = new System.Windows.Forms.Button();
             this.BtnDettach = new System.Windows.Forms.Button();
             this.GrpParameters = new System.Windows.Forms.GroupBox();
+            this.CbMaxEn = new System.Windows.Forms.CheckBox();
             this.CbMaxHp = new System.Windows.Forms.CheckBox();
             this.CbCores = new System.Windows.Forms.CheckBox();
             this.CbCubes = new System.Windows.Forms.CheckBox();
             this.CbNuts = new System.Windows.Forms.CheckBox();
             this.CbTitanShards = new System.Windows.Forms.CheckBox();
             this.CbMemoria = new System.Windows.Forms.CheckBox();
-            this.CbMaxEn = new System.Windows.Forms.CheckBox();
+            this.CbAttackPoints = new System.Windows.Forms.CheckBox();
+            this.CbPowerPoints = new System.Windows.Forms.CheckBox();
+            this.CbSpeedPoints = new System.Windows.Forms.CheckBox();
+            this.CbJumpPoints = new System.Windows.Forms.CheckBox();
             this.GrpParameters.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +71,10 @@
             this.GrpParameters.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.GrpParameters.Controls.Add(this.CbJumpPoints);
+            this.GrpParameters.Controls.Add(this.CbSpeedPoints);
+            this.GrpParameters.Controls.Add(this.CbPowerPoints);
+            this.GrpParameters.Controls.Add(this.CbAttackPoints);
             this.GrpParameters.Controls.Add(this.CbMaxEn);
             this.GrpParameters.Controls.Add(this.CbMaxHp);
             this.GrpParameters.Controls.Add(this.CbCores);
@@ -82,6 +90,16 @@
             this.GrpParameters.TabIndex = 2;
             this.GrpParameters.TabStop = false;
             this.GrpParameters.Text = "Parameters";
+            // 
+            // CbMaxEn
+            // 
+            this.CbMaxEn.AutoSize = true;
+            this.CbMaxEn.Location = new System.Drawing.Point(9, 157);
+            this.CbMaxEn.Name = "CbMaxEn";
+            this.CbMaxEn.Size = new System.Drawing.Size(64, 17);
+            this.CbMaxEn.TabIndex = 21;
+            this.CbMaxEn.Text = "Max EN";
+            this.CbMaxEn.UseVisualStyleBackColor = true;
             // 
             // CbMaxHp
             // 
@@ -143,15 +161,45 @@
             this.CbMemoria.Text = "Max Memoria";
             this.CbMemoria.UseVisualStyleBackColor = true;
             // 
-            // CbMaxEn
+            // CbAttackPoints
             // 
-            this.CbMaxEn.AutoSize = true;
-            this.CbMaxEn.Location = new System.Drawing.Point(9, 157);
-            this.CbMaxEn.Name = "CbMaxEn";
-            this.CbMaxEn.Size = new System.Drawing.Size(64, 17);
-            this.CbMaxEn.TabIndex = 21;
-            this.CbMaxEn.Text = "Max EN";
-            this.CbMaxEn.UseVisualStyleBackColor = true;
+            this.CbAttackPoints.AutoSize = true;
+            this.CbAttackPoints.Location = new System.Drawing.Point(141, 19);
+            this.CbAttackPoints.Name = "CbAttackPoints";
+            this.CbAttackPoints.Size = new System.Drawing.Size(112, 17);
+            this.CbAttackPoints.TabIndex = 22;
+            this.CbAttackPoints.Text = "Max Attack Points";
+            this.CbAttackPoints.UseVisualStyleBackColor = true;
+            // 
+            // CbPowerPoints
+            // 
+            this.CbPowerPoints.AutoSize = true;
+            this.CbPowerPoints.Location = new System.Drawing.Point(141, 42);
+            this.CbPowerPoints.Name = "CbPowerPoints";
+            this.CbPowerPoints.Size = new System.Drawing.Size(111, 17);
+            this.CbPowerPoints.TabIndex = 23;
+            this.CbPowerPoints.Text = "Max Power Points";
+            this.CbPowerPoints.UseVisualStyleBackColor = true;
+            // 
+            // CbSpeedPoints
+            // 
+            this.CbSpeedPoints.AutoSize = true;
+            this.CbSpeedPoints.Location = new System.Drawing.Point(141, 65);
+            this.CbSpeedPoints.Name = "CbSpeedPoints";
+            this.CbSpeedPoints.Size = new System.Drawing.Size(112, 17);
+            this.CbSpeedPoints.TabIndex = 24;
+            this.CbSpeedPoints.Text = "Max Speed Points";
+            this.CbSpeedPoints.UseVisualStyleBackColor = true;
+            // 
+            // CbJumpPoints
+            // 
+            this.CbJumpPoints.AutoSize = true;
+            this.CbJumpPoints.Location = new System.Drawing.Point(141, 88);
+            this.CbJumpPoints.Name = "CbJumpPoints";
+            this.CbJumpPoints.Size = new System.Drawing.Size(106, 17);
+            this.CbJumpPoints.TabIndex = 25;
+            this.CbJumpPoints.Text = "Max Jump Points";
+            this.CbJumpPoints.UseVisualStyleBackColor = true;
             // 
             // FrmTrainer
             // 
@@ -184,6 +232,10 @@
         private System.Windows.Forms.CheckBox CbMemoria;
         private System.Windows.Forms.CheckBox CbMaxHp;
         private System.Windows.Forms.CheckBox CbMaxEn;
+        private System.Windows.Forms.CheckBox CbJumpPoints;
+        private System.Windows.Forms.CheckBox CbSpeedPoints;
+        private System.Windows.Forms.CheckBox CbPowerPoints;
+        private System.Windows.Forms.CheckBox CbAttackPoints;
     }
 }
 

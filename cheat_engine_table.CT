@@ -77,6 +77,46 @@
         <Offset>1E8</Offset>
       </Offsets>
     </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"Attack points"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"30XX.exe"+00C3D2B8</Address>
+      <Offsets>
+        <Offset>608</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"Power points"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"30XX.exe"+00C3D2B8</Address>
+      <Offsets>
+        <Offset>638</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>11</ID>
+      <Description>"Speed points"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"30XX.exe"+00C3D2B8</Address>
+      <Offsets>
+        <Offset>5F0</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>12</ID>
+      <Description>"Jump points"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"30XX.exe"+00C3D2B8</Address>
+      <Offsets>
+        <Offset>600</Offset>
+      </Offsets>
+    </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
 </CheatTable>
