@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTrainer));
             this.BtnAttach = new System.Windows.Forms.Button();
             this.BtnDettach = new System.Windows.Forms.Button();
             this.GrpParameters = new System.Windows.Forms.GroupBox();
@@ -210,6 +211,7 @@
             this.Controls.Add(this.BtnDettach);
             this.Controls.Add(this.BtnAttach);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmTrainer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "30XX Trainer";

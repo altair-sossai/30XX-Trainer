@@ -108,7 +108,7 @@ namespace _30XX_Trainer
                 player.PowerPoints = 999;
 
             if (CbSpeedPoints.Checked)
-                player.SpeedPoints = 250;
+                player.SpeedPoints = 100;
 
             if (CbJumpPoints.Checked)
                 player.JumpPoints = 500;
