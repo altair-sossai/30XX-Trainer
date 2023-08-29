@@ -14,6 +14,8 @@ namespace _30XX_Trainer.Modules
         }
 
         public Parameters Parameters { get; private set; }
+        public Player Player1 { get; private set; }
+        public Player Player2 { get; private set; }
 
         public bool AttachGameProcess()
         {
@@ -23,6 +25,8 @@ namespace _30XX_Trainer.Modules
                 return false;
 
             Parameters = new Parameters(this);
+            Player1 = new Player(this, 1);
+            Player2 = new Player(this, 2);
 
             return true;
         }
@@ -31,6 +35,10 @@ namespace _30XX_Trainer.Modules
         {
             _mem.CloseProcess();
             _mem = null;
+
+            Parameters = null;
+            Player1 = null;
+            Player2 = null;
         }
 
         internal int ReadInt(string code)

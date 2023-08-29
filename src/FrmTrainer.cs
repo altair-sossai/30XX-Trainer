@@ -58,6 +58,12 @@ namespace _30XX_Trainer
 
         private void Timer_Tick(object sender, EventArgs e)
         {
+            UpdateParameters();
+            UpdatePlayers();
+        }
+
+        private void UpdateParameters()
+        {
             var parameters = _game?.Parameters;
             if (parameters == null)
                 return;
@@ -73,27 +79,39 @@ namespace _30XX_Trainer
 
             if (CbCubes.Checked)
                 parameters.Cubes = 999_999;
+        }
+
+        private void UpdatePlayers()
+        {
+            UpdatePlayer(_game.Player1);
+            UpdatePlayer(_game.Player2);
+        }
+
+        private void UpdatePlayer(Player player)
+        {
+            if (player == null)
+                return;
 
             if (CbCores.Checked)
-                parameters.Cores = 999_999;
+                player.Cores = 999_999;
 
             if (CbMaxHp.Checked)
-                parameters.Hp = parameters.MaxHp = 999_999;
+                player.Hp = player.MaxHp = 999_999;
 
             if (CbMaxEn.Checked)
-                parameters.En = parameters.MaxEn = 999_999;
+                player.En = player.MaxEn = 999_999;
 
             if (CbAttackPoints.Checked)
-                parameters.AttackPoints = 999;
+                player.AttackPoints = 999;
 
             if (CbPowerPoints.Checked)
-                parameters.PowerPoints = 999;
+                player.PowerPoints = 999;
 
             if (CbSpeedPoints.Checked)
-                parameters.SpeedPoints = 250;
+                player.SpeedPoints = 250;
 
             if (CbJumpPoints.Checked)
-                parameters.JumpPoints = 500;
+                player.JumpPoints = 500;
         }
     }
 }
