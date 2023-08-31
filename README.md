@@ -1,5 +1,3 @@
-**Project README**
-
 # 30XX Game Trainer
 
 ![30XX Logo](assets/logo.jpg)
@@ -101,4 +99,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions, suggestions, or just want to say hello, you can reach us at [altairsossai@gmail.com](mailto:altairsossai@gmail.com) or through the [GitHub issues](link_to_issues_page).
+If you have any questions, suggestions, or just want to say hello, you can reach us at [altairsossai@gmail.com](mailto:altairsossai@gmail.com)
