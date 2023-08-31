@@ -35,13 +35,30 @@ The main objective of this project is to serve as a learning experience for both
 
 Our trainer project currently includes the following features:
 
-- **Infinite Health:** Maintain maximum health throughout the gameplay.
-- **Unlimited Energy:** Never run out of energy for special abilities.
-- **Enhanced Weapons:** Boost weapon damage and effectiveness.
+- **Memoria:** Access and modify in-game memory values.
+- **Titan Shards:** Increase the number of Titan Shards.
+- **Nuts - Magic Number:** Modify the magic number for Nuts.
+- **Nuts:** Increase the number of Nuts.
+- **Cubes:** Collect more Cubes for upgrades.
+- **Player 1 and Player 2:**
+  - **HP:** Set the health points.
+  - **Max HP:** Adjust the maximum health points.
+  - **EN:** Modify the energy points.
+  - **Max EN:** Adjust the maximum energy points.
+  - **Attack Points:** Boost the attack points.
+  - **Power Points:** Increase the power points.
+  - **Speed Points:** Enhance the speed points.
+  - **Jump Points:** Improve the jump points.
+  - **Cores:** Modify the number of Cores.
+
+Please note that the availability of these features may depend on the game version and other factors. Use this trainer responsibly and follow all terms of use provided by the game developers.
 
 These features are just the beginning, and we plan to expand the trainer's capabilities over time.
 
-![30XX Logo](assets/trainer-screenshot.png)
+## Trainer screenshot
+![Screenshot](assets/trainer-screenshot-01.png)
+
+![Screenshot](assets/trainer-screenshot-02.png)
 
 ## Getting Started
 
