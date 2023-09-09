@@ -35,7 +35,6 @@ Our trainer project currently includes the following features:
 
 - **Memoria:** Access and modify in-game memory values.
 - **Titan Shards:** Increase the number of Titan Shards.
-- **Nuts - Magic Number:** Modify the magic number for Nuts.
 - **Nuts:** Increase the number of Nuts.
 - **Cubes:** Collect more Cubes for upgrades.
 - **Player 1 and Player 2:**
