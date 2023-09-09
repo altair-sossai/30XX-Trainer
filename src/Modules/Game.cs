@@ -1,10 +1,13 @@
-﻿using System.Globalization;
+﻿using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
 using Memory;
 
 namespace _30XX_Trainer.Modules
 {
     public class Game
     {
+        private const int MaxPlayers = 2;
         private readonly string _file;
         private Mem _mem;
 
@@ -14,8 +17,7 @@ namespace _30XX_Trainer.Modules
         }
 
         public Parameters Parameters { get; private set; }
-        public Player Player1 { get; private set; }
-        public Player Player2 { get; private set; }
+        public List<Player> Players { get; private set; }
 
         public bool AttachGameProcess()
         {
@@ -25,8 +27,9 @@ namespace _30XX_Trainer.Modules
                 return false;
 
             Parameters = new Parameters(this);
-            Player1 = new Player(this, 1);
-            Player2 = new Player(this, 2);
+            Players = Enumerable.Range(1, MaxPlayers)
+                .Select(playerId => new Player(this, playerId))
+                .ToList();
 
             return true;
         }
@@ -37,8 +40,7 @@ namespace _30XX_Trainer.Modules
             _mem = null;
 
             Parameters = null;
-            Player1 = null;
-            Player2 = null;
+            Players = null;
         }
 
         internal int ReadInt(string code)

@@ -83,8 +83,8 @@ namespace _30XX_Trainer
 
         private void UpdatePlayers()
         {
-            UpdatePlayer(_game.Player1);
-            UpdatePlayer(_game.Player2);
+            foreach (var player in _game.Players)
+                UpdatePlayer(player);
         }
 
         private void UpdatePlayer(Player player)
