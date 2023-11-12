@@ -23,8 +23,8 @@
 
         public int Nuts
         {
-            get => _game.ReadInt("nuts") - _game.ReadInt("nuts_magic_number");
-            set => _game.SetInt("nuts", value + _game.ReadInt("nuts_magic_number"));
+            get => _game.ReadInt("nuts_magic_number") - _game.ReadInt("nuts");
+            set => _game.SetInt("nuts_magic_number", value + _game.ReadInt("nuts"));
         }
 
         public int Cubes
