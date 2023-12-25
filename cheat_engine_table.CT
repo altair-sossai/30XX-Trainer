@@ -6,35 +6,35 @@
       <Description>"Memoria"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>30XX.exe+998160</Address>
+      <Address>30XX.exe+999074</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>1</ID>
       <Description>"Titan Shards"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>30XX.exe+995DF0</Address>
+      <Address>30XX.exe+996DF8</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>2</ID>
       <Description>"Nuts - Magic number"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>30XX.exe+49C2DE4</Address>
+      <Address>30XX.exe+49C3E14</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>3</ID>
       <Description>"Nuts"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>30XX.exe+49D4DCC</Address>
+      <Address>30XX.exe+49D5DFC</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>14</ID>
       <Description>"Cubes"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>30XX.exe+995D8C</Address>
+      <Address>30XX.exe+996DCC</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>13</ID>
@@ -46,7 +46,7 @@
           <Description>"HP"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+00998238</Address>
+          <Address>"30XX.exe"+00999270</Address>
           <Offsets>
             <Offset>1B8</Offset>
           </Offsets>
@@ -56,7 +56,7 @@
           <Description>"Max HP"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+00998238</Address>
+          <Address>"30XX.exe"+00999270</Address>
           <Offsets>
             <Offset>1B0</Offset>
           </Offsets>
@@ -66,7 +66,7 @@
           <Description>"EN"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+00998238</Address>
+          <Address>"30XX.exe"+00999270</Address>
           <Offsets>
             <Offset>1E8</Offset>
           </Offsets>
@@ -76,7 +76,7 @@
           <Description>"Max EN"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+00998238</Address>
+          <Address>"30XX.exe"+00999270</Address>
           <Offsets>
             <Offset>1F0</Offset>
           </Offsets>
@@ -86,7 +86,7 @@
           <Description>"Attack points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+00998238</Address>
+          <Address>"30XX.exe"+00999270</Address>
           <Offsets>
             <Offset>610</Offset>
           </Offsets>
@@ -96,7 +96,7 @@
           <Description>"Power points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+00998238</Address>
+          <Address>"30XX.exe"+00999270</Address>
           <Offsets>
             <Offset>640</Offset>
           </Offsets>
@@ -106,7 +106,7 @@
           <Description>"Speed points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+00998238</Address>
+          <Address>"30XX.exe"+00999270</Address>
           <Offsets>
             <Offset>5F8</Offset>
           </Offsets>
@@ -116,7 +116,7 @@
           <Description>"Jump points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+00998238</Address>
+          <Address>"30XX.exe"+00999270</Address>
           <Offsets>
             <Offset>608</Offset>
           </Offsets>
@@ -126,7 +126,7 @@
           <Description>"Cores"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+00998238</Address>
+          <Address>"30XX.exe"+00999270</Address>
           <Offsets>
             <Offset>8A8</Offset>
           </Offsets>
@@ -143,7 +143,7 @@
           <Description>"HP"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049DBF88</Address>
+          <Address>"30XX.exe"+049DCFD8</Address>
           <Offsets>
             <Offset>1B8</Offset>
             <Offset>8</Offset>
@@ -154,7 +154,7 @@
           <Description>"Max HP"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049DBF88</Address>
+          <Address>"30XX.exe"+049DCFD8</Address>
           <Offsets>
             <Offset>1B0</Offset>
             <Offset>8</Offset>
@@ -165,7 +165,7 @@
           <Description>"EN"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049DBF88</Address>
+          <Address>"30XX.exe"+049DCFD8</Address>
           <Offsets>
             <Offset>1E8</Offset>
             <Offset>8</Offset>
@@ -176,7 +176,7 @@
           <Description>"Max EN"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049DBF88</Address>
+          <Address>"30XX.exe"+049DCFD8</Address>
           <Offsets>
             <Offset>1F0</Offset>
             <Offset>8</Offset>
@@ -187,7 +187,7 @@
           <Description>"Attack points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049DBF88</Address>
+          <Address>"30XX.exe"+049DCFD8</Address>
           <Offsets>
             <Offset>610</Offset>
             <Offset>8</Offset>
@@ -198,7 +198,7 @@
           <Description>"Power points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049DBF88</Address>
+          <Address>"30XX.exe"+049DCFD8</Address>
           <Offsets>
             <Offset>640</Offset>
             <Offset>8</Offset>
@@ -209,7 +209,7 @@
           <Description>"Speed points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049DBF88</Address>
+          <Address>"30XX.exe"+049DCFD8</Address>
           <Offsets>
             <Offset>5F8</Offset>
             <Offset>8</Offset>
@@ -220,7 +220,7 @@
           <Description>"Jump points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049DBF88</Address>
+          <Address>"30XX.exe"+049DCFD8</Address>
           <Offsets>
             <Offset>608</Offset>
             <Offset>8</Offset>
@@ -231,7 +231,7 @@
           <Description>"Cores"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049DBF88</Address>
+          <Address>"30XX.exe"+049DCFD8</Address>
           <Offsets>
             <Offset>8A8</Offset>
             <Offset>8</Offset>
