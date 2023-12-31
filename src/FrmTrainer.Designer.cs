@@ -32,6 +32,7 @@
             this.BtnAttach = new System.Windows.Forms.Button();
             this.BtnDettach = new System.Windows.Forms.Button();
             this.GrpParameters = new System.Windows.Forms.GroupBox();
+            this.CbStartWithResonantArmorSet = new System.Windows.Forms.CheckBox();
             this.CbJumpPoints = new System.Windows.Forms.CheckBox();
             this.CbSpeedPoints = new System.Windows.Forms.CheckBox();
             this.CbPowerPoints = new System.Windows.Forms.CheckBox();
@@ -72,6 +73,7 @@
             this.GrpParameters.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.GrpParameters.Controls.Add(this.CbStartWithResonantArmorSet);
             this.GrpParameters.Controls.Add(this.CbJumpPoints);
             this.GrpParameters.Controls.Add(this.CbSpeedPoints);
             this.GrpParameters.Controls.Add(this.CbPowerPoints);
@@ -91,6 +93,16 @@
             this.GrpParameters.TabIndex = 2;
             this.GrpParameters.TabStop = false;
             this.GrpParameters.Text = "Parameters";
+            // 
+            // CbStartWithResonantArmorSet
+            // 
+            this.CbStartWithResonantArmorSet.AutoSize = true;
+            this.CbStartWithResonantArmorSet.Location = new System.Drawing.Point(259, 19);
+            this.CbStartWithResonantArmorSet.Name = "CbStartWithResonantArmorSet";
+            this.CbStartWithResonantArmorSet.Size = new System.Drawing.Size(168, 17);
+            this.CbStartWithResonantArmorSet.TabIndex = 26;
+            this.CbStartWithResonantArmorSet.Text = "Start with Resonant Armor Set";
+            this.CbStartWithResonantArmorSet.UseVisualStyleBackColor = true;
             // 
             // CbJumpPoints
             // 
@@ -238,6 +250,7 @@
         private System.Windows.Forms.CheckBox CbSpeedPoints;
         private System.Windows.Forms.CheckBox CbPowerPoints;
         private System.Windows.Forms.CheckBox CbAttackPoints;
+        private System.Windows.Forms.CheckBox CbStartWithResonantArmorSet;
     }
 }
 

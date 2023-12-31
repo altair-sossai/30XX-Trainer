@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Reflection;
 using System.Windows.Forms;
+using _30XX_Trainer.Enums;
 using _30XX_Trainer.Modules;
 
 namespace _30XX_Trainer
@@ -59,6 +60,7 @@ namespace _30XX_Trainer
         private void Timer_Tick(object sender, EventArgs e)
         {
             UpdateParameters();
+            UpdateStartWithResonantArmorSet();
             UpdatePlayers();
         }
 
@@ -79,6 +81,17 @@ namespace _30XX_Trainer
 
             if (CbCubes.Checked)
                 parameters.Cubes = 999_999;
+        }
+
+        private void UpdateStartWithResonantArmorSet()
+        {
+            for (var i = 0; CbStartWithResonantArmorSet.Checked && i < 4 && i < _game.HqStore.Items.Count; i++)
+            {
+                var storeItem = _game.HqStore.Items[i];
+
+                storeItem.Item = Item.ResonantBuster + i;
+                storeItem.Purchased = true;
+            }
         }
 
         private void UpdatePlayers()

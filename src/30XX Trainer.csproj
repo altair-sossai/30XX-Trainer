@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\Item.cs" />
     <Compile Include="FrmTrainer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +63,7 @@
       <DependentUpon>FrmTrainer.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\Game.cs" />
+    <Compile Include="Modules\HqStore.cs" />
     <Compile Include="Modules\Parameters.cs" />
     <Compile Include="Modules\Player.cs" />
     <Compile Include="Program.cs" />
@@ -100,5 +102,6 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
