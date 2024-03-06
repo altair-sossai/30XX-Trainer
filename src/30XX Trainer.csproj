@@ -63,7 +63,7 @@
       <DependentUpon>FrmTrainer.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\Game.cs" />
-    <Compile Include="Modules\HqStore.cs" />
+    <Compile Include="Modules\SmugglerShop.cs" />
     <Compile Include="Modules\Parameters.cs" />
     <Compile Include="Modules\Player.cs" />
     <Compile Include="Program.cs" />

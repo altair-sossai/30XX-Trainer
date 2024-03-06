@@ -85,12 +85,12 @@ namespace _30XX_Trainer
 
         private void UpdateStartWithResonantArmorSet()
         {
-            for (var i = 0; CbStartWithResonantArmorSet.Checked && i < 4 && i < _game.HqStore.Items.Count; i++)
+            for (var i = 0; CbStartWithResonantArmorSet.Checked && i < 4 && i < _game.SmugglerShop.Items.Count; i++)
             {
-                var storeItem = _game.HqStore.Items[i];
+                var shopItem = _game.SmugglerShop.Items[i];
 
-                storeItem.Item = Item.ResonantBuster + i;
-                storeItem.Purchased = true;
+                shopItem.Item = Item.ForceResonator + i;
+                shopItem.Purchased = true;
             }
         }
 

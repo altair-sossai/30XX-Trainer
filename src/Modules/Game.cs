@@ -17,7 +17,7 @@ namespace _30XX_Trainer.Modules
         }
 
         public Parameters Parameters { get; private set; }
-        public HqStore HqStore { get; private set; }
+        public SmugglerShop SmugglerShop { get; private set; }
         public List<Player> Players { get; private set; }
 
         public bool AttachGameProcess()
@@ -28,7 +28,7 @@ namespace _30XX_Trainer.Modules
                 return false;
 
             Parameters = new Parameters(this);
-            HqStore = new HqStore(this);
+            SmugglerShop = new SmugglerShop(this);
 
             Players = Enumerable.Range(1, MaxPlayers)
                 .Select(playerId => new Player(this, playerId))
