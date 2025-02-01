@@ -6,35 +6,46 @@
       <Description>"Memoria"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>30XX.exe+99A078</Address>
+      <Address>30XX.exe+9D10C8</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>1</ID>
       <Description>"Titan Shards"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>30XX.exe+997DE8</Address>
+      <Address>30XX.exe+9D10F4</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>2</ID>
       <Description>"Nuts - Magic number"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>30XX.exe+49D6DEC</Address>
+      <Address>30XX.exe+49FD92C</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>3</ID>
       <Description>"Nuts"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>30XX.exe+49C4E04</Address>
+      <Address>30XX.exe+4A0FC7C</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>14</ID>
       <Description>"Cubes"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>30XX.exe+997DBC</Address>
+      <Address>30XX.exe+A27438</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>33</ID>
+      <Description>"Triplicate Spirits"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"30XX.exe"+04A64BD8</Address>
+      <Offsets>
+        <Offset>83C</Offset>
+        <Offset>0</Offset>
+      </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>13</ID>
@@ -46,9 +57,9 @@
           <Description>"HP"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+0099A260</Address>
+          <Address>"30XX.exe"+009D1340</Address>
           <Offsets>
-            <Offset>1B8</Offset>
+            <Offset>1C0</Offset>
           </Offsets>
         </CheatEntry>
         <CheatEntry>
@@ -56,9 +67,9 @@
           <Description>"Max HP"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+0099A260</Address>
+          <Address>"30XX.exe"+009D1340</Address>
           <Offsets>
-            <Offset>1B0</Offset>
+            <Offset>1B8</Offset>
           </Offsets>
         </CheatEntry>
         <CheatEntry>
@@ -66,9 +77,9 @@
           <Description>"EN"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+0099A260</Address>
+          <Address>"30XX.exe"+009D1340</Address>
           <Offsets>
-            <Offset>1E8</Offset>
+            <Offset>1F0</Offset>
           </Offsets>
         </CheatEntry>
         <CheatEntry>
@@ -76,9 +87,9 @@
           <Description>"Max EN"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+0099A260</Address>
+          <Address>"30XX.exe"+009D1340</Address>
           <Offsets>
-            <Offset>1F0</Offset>
+            <Offset>1F8</Offset>
           </Offsets>
         </CheatEntry>
         <CheatEntry>
@@ -86,7 +97,7 @@
           <Description>"Attack points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+0099A260</Address>
+          <Address>"30XX.exe"+009D1340</Address>
           <Offsets>
             <Offset>610</Offset>
           </Offsets>
@@ -96,7 +107,7 @@
           <Description>"Power points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+0099A260</Address>
+          <Address>"30XX.exe"+009D1340</Address>
           <Offsets>
             <Offset>640</Offset>
           </Offsets>
@@ -106,7 +117,7 @@
           <Description>"Speed points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+0099A260</Address>
+          <Address>"30XX.exe"+009D1340</Address>
           <Offsets>
             <Offset>5F8</Offset>
           </Offsets>
@@ -116,7 +127,7 @@
           <Description>"Jump points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+0099A260</Address>
+          <Address>"30XX.exe"+009D1340</Address>
           <Offsets>
             <Offset>608</Offset>
           </Offsets>
@@ -126,7 +137,7 @@
           <Description>"Cores"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+0099A260</Address>
+          <Address>"30XX.exe"+009D1340</Address>
           <Offsets>
             <Offset>8A8</Offset>
           </Offsets>
@@ -145,7 +156,7 @@
           <VariableType>4 Bytes</VariableType>
           <Address>"30XX.exe"+049DDFC8</Address>
           <Offsets>
-            <Offset>1B8</Offset>
+            <Offset>1C0</Offset>
             <Offset>8</Offset>
           </Offsets>
         </CheatEntry>
@@ -156,7 +167,7 @@
           <VariableType>4 Bytes</VariableType>
           <Address>"30XX.exe"+049DDFC8</Address>
           <Offsets>
-            <Offset>1B0</Offset>
+            <Offset>1B8</Offset>
             <Offset>8</Offset>
           </Offsets>
         </CheatEntry>
@@ -167,7 +178,7 @@
           <VariableType>4 Bytes</VariableType>
           <Address>"30XX.exe"+049DDFC8</Address>
           <Offsets>
-            <Offset>1E8</Offset>
+            <Offset>1F0</Offset>
             <Offset>8</Offset>
           </Offsets>
         </CheatEntry>
@@ -249,7 +260,7 @@
           <Description>"Item Slot #01"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049D5F58</Address>
+          <Address>"30XX.exe"+04A66530</Address>
           <Offsets>
             <Offset>0</Offset>
           </Offsets>
@@ -259,7 +270,7 @@
           <Description>"Item Slot #02"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049D5F58</Address>
+          <Address>"30XX.exe"+04A66530</Address>
           <Offsets>
             <Offset>10</Offset>
           </Offsets>
@@ -269,7 +280,7 @@
           <Description>"Item Slot #03"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049D5F58</Address>
+          <Address>"30XX.exe"+04A66530</Address>
           <Offsets>
             <Offset>20</Offset>
           </Offsets>
@@ -279,7 +290,7 @@
           <Description>"Item Slot #04"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049D5F58</Address>
+          <Address>"30XX.exe"+04A66530</Address>
           <Offsets>
             <Offset>30</Offset>
           </Offsets>
@@ -289,7 +300,7 @@
           <Description>"Item Slot #05"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>"30XX.exe"+049D5F58</Address>
+          <Address>"30XX.exe"+04A66530</Address>
           <Offsets>
             <Offset>40</Offset>
           </Offsets>
@@ -297,5 +308,5 @@
       </CheatEntries>
     </CheatEntry>
   </CheatEntries>
-  <UserdefinedSymbols />
+  <UserdefinedSymbols/>
 </CheatTable>
